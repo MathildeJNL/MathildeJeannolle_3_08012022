@@ -22,8 +22,8 @@ header
 
 #logo
 {
-    height: 60%;
-    width: 60%;
+    font-family: "Shrikhand", sans-serif;
+    font-size: 1.5em;
 }
 
 /*BARRE DE RECHERCHE*/
@@ -39,15 +39,20 @@ input
 {
     border-style: none;
     background-color: rgb(223, 223, 223);
-    font-size: 1.2em;
+    font-size: 0.8em;
     width: 60%;
 }
 
 #icone-recherche
 {
-    height: 20px;
-    margin-right: 15px;
+    margin-right: 5px;
     color: rgb(85, 80, 80);
+}
+
+#recherche-boite
+{
+    display: flex;
+    justify-content: center;
 }
 
 /*1ER BLOC*/
@@ -60,6 +65,8 @@ input
 #main-explore h2
 {
     margin: 0;
+    font-size: 1.6em;
+    padding-top: 10px;
 }
 
 #main-explore p
@@ -89,6 +96,11 @@ input
 .bouton-fonct
 {
     padding-right: 15px;
+}
+
+#fonctionnement h2
+{
+    font-size: large;
 }
 
 #fonctionnement ul li
@@ -139,6 +151,11 @@ input
     width: 100%;
 }
 
+#restaurants h3
+{
+    font-size: large;
+}
+
 #restaurants a
 {
     text-decoration: none;
@@ -154,18 +171,32 @@ input
 #restaurants p
 {
     background-color: white;
+    border-radius: 10px;
     text-align: left;
     margin: 0px;
+    padding-left: 15px;
 }
 
 
 /*FOOTER*/
+
+footer h3
+{
+    padding: 9px;
+    margin: 0;
+    background-color: #535353;
+    font-family: "Shrikhand", sans-serif;
+    font-size: 1em;
+    font-weight: normal;
+    color: white;
+}
 
 #nav-foot
 {
     padding: 9px;
     margin: 0;
     background-color: #535353;
+    line-height: 1.7;
 }
 
 #nav-foot li a
@@ -174,5 +205,14 @@ input
     color: white;
 }
 
+footer ul
+{
+    list-style-type: none;
+}
+
+.bouton-footer
+{
+    margin-right: 5px;
+}
 
 /* } */
