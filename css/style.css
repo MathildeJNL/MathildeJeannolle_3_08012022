@@ -79,7 +79,6 @@ input
 
 #bouton-explore
 {
-    
     border-radius: 60px;
     padding: 15px;
     text-decoration: none;
@@ -89,28 +88,23 @@ input
     font-size: 0.9em;
 }
 
+#bouton-explore:hover
+{
+    opacity: 0.4;
+    box-shadow: 2px 4px 4px #0c0c0c;
+    transition: all .5s;
+}
+
 
 /*2EME BLOC*/
 
-#bouton
-{
-width: 100%;
-padding: 0;
-}
 
-.bouton-fonct
-{
-    padding-right: 25px;
-    color: rgb(126, 126, 126);
-}
-/*hoover : rbg(147, 86, 220);*/
 
 #fonctionnement h2
 {
     font-size: large;
     padding-left: 15px;
 }
-
 
 /*COMPTEUR BOUTONS*/
 #fonctionnement ul
@@ -136,8 +130,16 @@ padding: 0;
     margin-right: -7px;
 }
 
-
 /*DESIGN BOUTONS*/
+
+/*ICONES*/
+.bouton-fonct
+{
+    padding-right: 25px;
+    color: rgb(126, 126, 126);
+}
+
+/*PARAMETRES GENERAUX*/
 #fonctionnement ul li
 {
     display: flex;
@@ -161,6 +163,24 @@ padding: 0;
     width: 70%;
 }
 
+#bouton
+{
+width: 100%;
+padding: 0;
+}
+
+/*EFFET AU SURVOL ICONES + RECTANGLES */
+#bouton li a:hover
+{
+    background-color: rgb(245, 237, 255);
+    transition: all .5s;
+}
+
+#bouton li a:hover > .bouton-fonct
+{
+    color: rgb(147, 86, 220);
+    transition: all .5s;
+}
 
 /*3EME BLOC = RESTAURANTS*/
 
@@ -186,7 +206,21 @@ padding: 0;
     margin: 5px;
     font-size: 0.8em;
     font-weight: bold;
+}
 
+.txt
+{
+    background-color: white;
+    border-radius: 10px;
+    text-align: left;
+    margin: 0px;
+    padding-left: 15px;
+}
+
+.bouton-coeur
+{
+    display: flex;
+    justify-content: right;
 }
 
 #restaurants
@@ -217,14 +251,6 @@ padding: 0;
     position: relative;
 }
 
-.txt
-{
-    background-color: white;
-    border-radius: 10px;
-    text-align: left;
-    margin: 0px;
-    padding-left: 15px;
-}
 
 
 /*FOOTER*/
