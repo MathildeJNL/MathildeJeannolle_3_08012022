@@ -221,6 +221,22 @@ padding: 0;
 {
     display: flex;
     justify-content: right;
+    position: absolute;
+    top: 160px;
+    right: 0;
+    margin: 10px;
+}
+
+.coeur-plein:hover
+{
+    display: flex;
+    justify-content: right;
+    position: absolute;
+    top: 160px;
+    right: 0;
+    margin: 10px;
+    background-clip: text;
+    color: violet;
 }
 
 #restaurants
