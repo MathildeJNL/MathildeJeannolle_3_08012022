@@ -98,8 +98,6 @@ input
 
 /*2EME BLOC*/
 
-
-
 #fonctionnement h2
 {
     font-size: large;
@@ -227,7 +225,7 @@ padding: 0;
     margin: 10px;
 }
 
-.coeur-plein:hover
+.coeur-plein
 {
     display: flex;
     justify-content: right;
@@ -235,9 +233,27 @@ padding: 0;
     top: 160px;
     right: 0;
     margin: 10px;
-    background-clip: text;
-    color: violet;
+    color: transparent;
 }
+
+.coeur-plein:hover
+{
+    /* display: none;
+    background-clip: border-box;
+    -webkit-background-clip: border-box;
+    color: violet; */
+        /* background:-moz-linear-gradient(top, #e72c83 0%, #a742c6 100%);  */
+        /* background: -webkit-linear-gradient(top, #e72c83 0%,#a742c6 100%);  */
+        /* background: linear-gradient(to bottom, #e72c83 0%,#a742c6 100%); */
+
+        background: linear-gradient(#FF79DA, #9356DC);
+        -webkit-background-clip: text;
+        /* -moz-background-clip: text; */
+        background-clip: text;
+       -webkit-text-fill-color:transparent;
+}
+
+
 
 #restaurants
 {
@@ -249,9 +265,16 @@ padding: 0;
     width: 100%;
 }
 
+/*TITRE RESTAU*/
+#title-restau
+{
+    width: 100%;
+}
+
 #restaurants h3
 {
     font-size: large;
+    padding-left: 15px;
 }
 
 #restaurants a
@@ -282,8 +305,20 @@ footer h3
     color: white;
 }
 
+footer ul
+{
+    list-style-type: none;
+}
+
+.bouton-footer
+{
+    margin-right: 5px;
+}
+
 #nav-foot
 {
+    display: flex;
+    flex-direction: column;
     padding: 9px;
     margin: 0;
     background-color: #535353;
@@ -294,16 +329,7 @@ footer h3
 {
     text-decoration: none;
     color: white;
-}
-
-footer ul
-{
-    list-style-type: none;
-}
-
-.bouton-footer
-{
-    margin-right: 5px;
+    
 }
 
 /* } */
