@@ -1,0 +1,103 @@
+
+/*GENERAL*/
+
+body
+{
+    width: 100%;
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+}
+
+
+/*LOGO*/
+
+/* #title-restaurant
+{
+    /* position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+
+#title-restaurant
+{
+    font-family: "Shrikhand", sans-serif;
+    font-size: 1.2em;
+    width: 100%;
+    
+    padding-left: 15px;
+}
+
+
+/*CORPS*/
+
+/*fond gris général*/
+#grey-font
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    background-color: #f2f2f2;
+    width: 100%;
+}
+
+/*titre et coeur des restau*/
+header
+{
+    position: relative;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#logo
+{
+    font-family: "Shrikhand", sans-serif;
+    font-size: 1.5em;
+}
+
+/*FOOTER*/
+footer h3
+{
+    padding: 9px;
+    margin: 0;
+    background-color: #535353;
+    font-family: "Shrikhand", sans-serif;
+    font-size: 1em;
+    font-weight: normal;
+    color: white;
+}
+
+footer ul
+{
+    list-style-type: none;
+}
+
+.bouton-footer
+{
+    margin-right: 5px;
+}
+
+footer i
+{
+    width: 20px;
+}
+
+#nav-foot
+{
+    display: flex;
+    flex-direction: column;
+    padding: 9px;
+    margin: 0;
+    background-color: #535353;
+    line-height: 1.7;
+}
+
+#nav-foot li a
+{
+    text-decoration: none;
+    color: white;
+    
+}

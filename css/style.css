@@ -233,10 +233,15 @@ padding: 0;
     top: 160px;
     right: 0;
     margin: 10px;
-    color: transparent;
+    display: none;
 }
 
-.coeur-plein:hover
+.bouton-coeur:hover .far
+{
+    display: none;
+}
+
+.bouton-coeur:hover ~ .coeur-plein
 {
     /* display: none;
     background-clip: border-box;
@@ -245,15 +250,13 @@ padding: 0;
         /* background:-moz-linear-gradient(top, #e72c83 0%, #a742c6 100%);  */
         /* background: -webkit-linear-gradient(top, #e72c83 0%,#a742c6 100%);  */
         /* background: linear-gradient(to bottom, #e72c83 0%,#a742c6 100%); */
-
+        display: block;
         background: linear-gradient(#FF79DA, #9356DC);
         -webkit-background-clip: text;
         /* -moz-background-clip: text; */
         background-clip: text;
        -webkit-text-fill-color:transparent;
 }
-
-
 
 #restaurants
 {
@@ -313,6 +316,11 @@ footer ul
 .bouton-footer
 {
     margin-right: 5px;
+}
+
+footer i
+{
+    width: 20px;
 }
 
 #nav-foot
