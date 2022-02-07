@@ -17,6 +17,8 @@ header
     height: 50px;
     display: flex;
     align-items: center;
+    justify-content: space-between;
+    width: 100%;
 }
 
 .restaurants a
@@ -29,14 +31,12 @@ header
 {
     font-family: "Shrikhand", sans-serif;
     font-size: 1.5em;
-    display: flex;
-    justify-content: center;
+    width: 70%;
 }
 
 #arrow
 {
-    display: flex;
-    justify-content: left;
+  width: 10%;
 }
 
 
@@ -48,6 +48,7 @@ header
     height: 200px;
     display: flex;
     position: absolute;
+    object-fit: cover;
 }
 
 
@@ -116,59 +117,40 @@ header
 
 /*MENUS*/
 
-/* .menus-forms
+/*effets d'apparition*/
+.first-step
 {
-    animation: fadein-bottom 1.5s ease-in-out both;
-    
-    overflow: hidden;
-} */
-
-.menus-forms b
-{
-    font-size: 0.95em;
+  animation: fadein-bottom 1.5s ease-in-out ;
 }
 
-.little-info
+.second-step
 {
-    font-size: 0.8em;
+  animation: fadein-bottom 2.5s ease-in-out;
 }
 
-.price
+.third-step
 {
-    position: absolute;
-    right: 10px;
+  animation: fadein-bottom 3.5s ease-in-out;
 }
 
-.menus-forms li:hover .selector
+.fourth-step
 {
-    transform: translateX(0%);
-    transition: 0.5s ease;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  animation: fadein-bottom 4.5s ease-in-out;
 }
 
-.menus-forms li:hover .price
-{
-    transition: 0.5s ease;
-    padding-right: 70px;
+@keyframes fadein-bottom {
+  0% {
+      transform: translateY(2rem);
+      opacity: 0;
+  }
+
+  100% {
+      transform: translateY(0);
+      opacity: 1;
+  }
 }
 
-.selector
-{
-    position: absolute;
-    background: #99E2D0;
-    right: 0px;
-    width: 60px;
-    height: 60px;
-    color: #fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transform: translateX(100%);
-    transition: 0.5s ease;
-}
-
+/*effet de rotation du chek au survol*/
 /*
 @-webkit-keyframes fadein-bottom {
   0% {
@@ -225,6 +207,74 @@ header
 }
 */
 
+/*"masquer" les infos en trop*/
+.little-info
+{
+  font-size: 0.8em;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.price
+{
+    font-weight: bold;
+    font-size: 0.95em;
+    right: 10px;
+    padding-left: 10px;
+    transition: 0.5s ease
+}
+
+.menus-forms p
+{
+  font-size: 0.9em;
+}
+
+.menus-forms li:hover .selector
+{
+    transform: translateX(0%);
+    transition: 0.5s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menus-forms li:hover .price
+{
+    transition: 0.5s ease;
+    padding-right: 70px;
+}
+
+.selector
+{
+    position: absolute;
+    background: #99E2D0;
+    right: 0px;
+    width: 50px;
+    height: 60px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateX(100%);
+    transition: 0.5s ease;
+}
+
+.wrapper
+{
+  display: flex;
+  justify-content: space-between;
+}
+
+.title
+{
+  width: 40px;
+  height: 3px;
+  background: #99E2D0;
+  display: flex;
+  flex-direction: column-reverse;
+  margin: 15px;
+}
 
 #menus ul
  {
@@ -233,7 +283,7 @@ header
     margin: 0;
  }
 
-#menus ul li a
+#menus ul li
 {
     display: flex;
     flex-direction: column;
@@ -252,10 +302,10 @@ header
     overflow: hidden;
 }
 
-#menus ul li a p
+#menus ul li p
 {
     margin: 0;
-    line-height: 0.5;
+    /* line-height: 0.5; */
 }
 
 
