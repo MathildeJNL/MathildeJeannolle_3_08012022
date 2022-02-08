@@ -24,6 +24,7 @@ body
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    animation: preloader 3s ease-in-out forwards;
 }
 
 .preloader h1
@@ -50,7 +51,7 @@ body
     border: 6px solid white;
     border-color: #99E2D0 transparent #FF79DA transparent;
     border-radius: 50%;
-    animation: loader 1s infinite ease-in-out;
+    animation: loader 3s ease-in-out forwards;
 }
 
 @keyframes loader
@@ -59,11 +60,34 @@ body
             transform: rotate(0deg);
         }
 
+    33% {
+        transform: rotate(360deg);
+        }
+
+    66% {
+        transform: rotate(720deg);
+        }
+
  100%   {
-            transform: rotate(360deg);
+            transform: rotate(1080deg);
         }
 }
 
+@keyframes preloader
+{
+    0%  {
+            opacity: 1;
+        }
+
+ 100%   {
+            opacity: 0;
+            visibility: hidden;
+        }
+}
+
+
+
+/*Corps*/
 header
 {
     box-shadow: 0 0 6px grey;
@@ -394,4 +418,61 @@ footer i
     
 }
 
-/* } */
+/*MEDIA DESKTOP*/
+
+@media all and (min-width: 1024px)
+{
+
+    header
+    {
+        height: 70px;
+    }
+
+    footer h3
+    {
+        text-align: center;
+    }
+
+    #starters
+    {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    width: 100%;
+    }
+
+    #logo
+    {
+        font-size: 3.5em;
+    }
+
+    #bouton
+    {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    width: 100%;
+    }
+
+    #fonctionnement ul li a
+    {
+        width: 100%;
+    }
+
+    #restaurants
+    {
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: row;
+        width: 100%;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    #nav-foot
+    {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+}

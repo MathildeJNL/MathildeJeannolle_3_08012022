@@ -31,7 +31,8 @@ header
 {
     font-family: "Shrikhand", sans-serif;
     font-size: 1.5em;
-    width: 70%;
+    width: 100%;
+    text-align: center;
 }
 
 #arrow
@@ -150,8 +151,9 @@ header
   }
 }
 
+
 /*effet de rotation du chek au survol*/
-/*
+
 @-webkit-keyframes fadein-bottom {
   0% {
     transform: translateY(2rem);
@@ -162,6 +164,7 @@ header
     opacity: 1;
   }
 }
+
 @keyframes fadein-bottom {
   0% {
     transform: translateY(2rem);
@@ -172,7 +175,8 @@ header
     opacity: 1;
   }
 }
-.item-card:hover .item-select {
+
+.selector:hover {
   transform: translateX(0%);
   transition: 0.5s ease;
   display: flex;
@@ -180,11 +184,8 @@ header
   align-items: center;
 }
 
-.item-card:hover .item-price {
-  padding-right: 70px;
-}
 
-.item-card:hover .fa-check-circle {
+.menus-forms li:hover .selector .fa-check-circle {
   -webkit-animation: check 0.5s ease forwards;
   animation: check 0.5s ease forwards;
 }
@@ -205,12 +206,21 @@ header
     transform: rotate(360deg);
   }
 }
-*/
+
 
 /*"masquer" les infos en trop*/
 .little-info
 {
   font-size: 0.8em;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.principal
+{
+  font-size: 0.8em;
+  font-weight: bold;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -242,7 +252,12 @@ header
 .menus-forms li:hover .price
 {
     transition: 0.5s ease;
-    padding-right: 70px;
+    padding-right: 40px;
+}
+
+.menus-forms li:hover .principal
+{
+    width: 80%;
 }
 
 .selector
@@ -263,6 +278,12 @@ header
 .wrapper
 {
   display: flex;
+  justify-content: space-between;
+}
+.wrapper-global
+{
+  display: flex;
+  flex-direction: column;
   justify-content: space-between;
 }
 
@@ -383,4 +404,37 @@ footer i
     text-decoration: none;
     color: white;
     
+}
+
+@media all and (min-width: 1024px)
+{
+  .menus-forms
+  {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  header
+  {
+      height: 70px;
+  }
+
+  footer h3
+  {
+      text-align: center;
+  }
+
+  #logo
+    {
+        font-size: 3.5em;
+    }
+
+    #nav-foot
+    {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
 }
