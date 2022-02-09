@@ -424,6 +424,7 @@ footer i
   footer h3
   {
       text-align: center;
+      margin: -1px;
   }
 
   #logo
@@ -431,10 +432,37 @@ footer i
         font-size: 3.5em;
     }
 
-    #nav-foot
-    {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
-    }
+  #arrow
+  {
+    font-size: xx-large;
+  }
+
+  #menus
+  {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+  }
+
+  #starters
+  {
+    width: 30%;
+  }
+
+  #course
+  {
+    width: 30%;
+  }
+
+  #deserts
+  {
+    width: 30%;
+  }
+
+  #nav-foot
+  {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
 }
