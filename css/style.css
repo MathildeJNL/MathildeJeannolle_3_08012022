@@ -246,6 +246,13 @@ padding: 0;
 }
 
 /*EFFET AU SURVOL ICONES + RECTANGLES */
+
+#fonctionnement ul li a:hover
+{
+    color: rgb(147, 86, 220);
+    transition: all .5s;
+}
+
 #bouton li a:hover
 {
     background-color: rgb(245, 237, 255);
