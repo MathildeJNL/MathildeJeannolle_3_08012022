@@ -192,7 +192,7 @@ header
 }
 
 
-/*effet de rotation du chek au survol*/
+/*effet de rotation du check au survol*/
 
 @-webkit-keyframes fadein-bottom {
   0% {
@@ -366,7 +366,6 @@ header
 #menus ul li p
 {
     margin: 0;
-    /* line-height: 0.5; */
 }
 
 
